@@ -18,9 +18,9 @@ public class pokemon_selector extends AppCompatActivity {
         ArrayAdapter listAdapter = new ArrayAdapter<pokemon>(
                 this,
                 android.R.layout.simple_list_item_1,
-                pokemon.drinks);
-        ListView listDrinks = (ListView) findViewById(R.id.list_pokemon);
-        listDrinks.setAdapter(listAdapter);
+                pokemon.poks);
+        ListView listPokemon = (ListView) findViewById(R.id.list_pokemon);
+        listPokemon.setAdapter(listAdapter);
 
         AdapterView.OnItemClickListener itemClickListener =
                 new AdapterView.OnItemClickListener() {
@@ -32,6 +32,6 @@ public class pokemon_selector extends AppCompatActivity {
                         startActivity(intent);
                     }
                 };
-        listDrinks.setOnItemClickListener(itemClickListener);
+        listPokemon.setOnItemClickListener(itemClickListener);
     }
 }

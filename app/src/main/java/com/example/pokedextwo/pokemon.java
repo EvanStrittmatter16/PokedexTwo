@@ -6,7 +6,7 @@ public class pokemon {
     private int imageResourceID;
 
 
-    public static final pokemon[] drinks = {
+    public static final pokemon[] poks = {
             new pokemon("pokemon1", "blah",
                     R.drawable.charizard),
 //            new pokemon("pokemon2", "blah",

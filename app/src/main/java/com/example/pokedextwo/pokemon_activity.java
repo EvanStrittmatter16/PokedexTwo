@@ -15,18 +15,18 @@ public class pokemon_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokemon);
 
-        int drinkId = (Integer)getIntent().getExtras().get(EXTRA_POKEMONID);
-        pokemon drink = pokemon.drinks[drinkId];
+        int poksId = (Integer)getIntent().getExtras().get(EXTRA_POKEMONID);
+        pokemon p = pokemon.poks[poksId];
 
         TextView name = (TextView)findViewById(R.id.name);
-        name.setText(drink.getName());
+        name.setText(p.getName());
 
         TextView description = (TextView)findViewById(R.id.description);
-        description.setText(drink.getDescription());
+        description.setText(p.getDescription());
 
         ImageView photo = (ImageView)findViewById(R.id.photo);
-        photo.setImageResource(drink.getImageResourceID());
-        photo.setContentDescription(drink.getName());
+        photo.setImageResource(p.getImageResourceID());
+        photo.setContentDescription(p.getName());
 
     }
 
