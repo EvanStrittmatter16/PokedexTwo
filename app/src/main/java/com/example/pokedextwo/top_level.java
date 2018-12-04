@@ -22,12 +22,12 @@ public class top_level extends Activity {
                     Intent intent = new Intent(top_level.this, pokemon_selector.class);
                     startActivity(intent);
                 }
-                else if (position == 1){
-                    Intent intent = new Intent(top_level.this, pokemon_selector.class);
+                else if (position == 2){
+                    Intent intent = new Intent(top_level.this, MapActivity.class);
                     startActivity(intent);
                 }
-                else if (position == 2){
-                    Intent intent = new Intent(top_level.this, pokemon_selector.class);
+                else if (position == 1){
+                    Intent intent = new Intent(top_level.this, TypeChart.class);
                     startActivity(intent);
                 }
             }
