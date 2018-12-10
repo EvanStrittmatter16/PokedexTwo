@@ -17,4 +17,13 @@ tools:context=".pokemon_selector">
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ListView>
 
+    <!--<TextView-->
+        <!--android:id="@+id/text_view_description"-->
+        <!--android:layout_width="162dp"-->
+        <!--android:layout_height="29dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/photo" />-->
+
 </android.support.constraint.ConstraintLayout>

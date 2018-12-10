@@ -1,5 +1,7 @@
 package com.example.pokedextwo;
 
+import java.util.ArrayList;
+
 public class pokemon {
     private String name;
     private String description;
@@ -7,12 +9,12 @@ public class pokemon {
 
 
     public static final pokemon[] poks = {
-            new pokemon("pokemon1", "blah",
+            new pokemon("charmander", "blah",
                     R.drawable.charizard),
-//            new pokemon("pokemon2", "blah",
-//                    R.drawable.cappuccino),
-//            new pokemon("pokemon3", "blah",
-//                    R.drawable.filter)
+            new pokemon("charmeleon", "blah",
+                    R.drawable.charizard),
+            new pokemon("charizard", "blah",
+                   R.drawable.charizard)
     };
     private pokemon(String name, String description, int imageResourceID){
         this.name=name;
